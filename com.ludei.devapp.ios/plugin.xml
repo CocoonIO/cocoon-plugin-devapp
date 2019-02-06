@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.ludei.devapp.ios" version="1.1.4">
+    <name>DeveloperApp</name>
+    <description>Cocoon Developer App for iOS</description>
+    <license>MPL 2.0</license>
+    <keywords>Developer,App,Launcher,devapp,CocoonJS</keywords>
+    <platform name="ios">
+
+    	<hook type="after_plugin_install" src="scripts/after_plugin_install.js" />
+        <hook type="after_prepare" src="scripts/after_prepare.js" />
+        <hook type="before_prepare" src="scripts/before_prepare.js" />
+
+        <header-file src="src/CDVCommandDelegateImpl+DevApp.h" />
+        <source-file src="src/CDVCommandDelegateImpl+DevApp.m" />
+        <header-file src="src/CocoonCordovaProtocol.h" />
+        <header-file src="src/CocoonCordovaViewController.h" />
+        <source-file src="src/CocoonCordovaViewController.m" />
+        <source-file src="src/libCocoonDeveloperApp.a" framework="true" />
+        <resource-file src="src/CocoonJSLauncher.bundle" />
+        <resource-file src="src/demos.json" />
+        <resource-file src="src/devapp_exit@2x.png" />
+
+        <framework src="libz.dylib" />
+        <framework src="libsqlite3.dylib" />
+        <framework src="libicucore.dylib" />
+        <framework src="CFNetwork.framework" />
+        <framework src="Security.framework" />
+        <framework src="Foundation.framework" />
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="DevApp">
+                <param name="ios-package" value="DevAppPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/DevAppPlugin.h" />
+        <source-file src="src/DevAppPlugin.m" />
+
+        <config-file target="*-Info.plist" parent="UIFileSharingEnabled">
+            <true/>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="UIViewControllerBasedStatusBarAppearance">
+            <true/>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations">
+            <array>
+                <string>UIInterfaceOrientationPortrait</string>
+                <string>UIInterfaceOrientationLandscapeLeft</string>
+                <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                <string>UIInterfaceOrientationLandscapeRight</string>
+            </array>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations~ipad">
+            <array>
+                <string>UIInterfaceOrientationPortrait</string>
+                <string>UIInterfaceOrientationLandscapeLeft</string>
+                <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                <string>UIInterfaceOrientationLandscapeRight</string>
+            </array>
+        </config-file>   
+
+        <dependency id="com.ludei.injector.ios" />
+
+    </platform>
+
+</plugin>

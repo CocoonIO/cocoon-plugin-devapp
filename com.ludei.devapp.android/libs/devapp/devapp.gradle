@@ -1,0 +1,18 @@
+repositories {
+  mavenCentral()
+  flatDir {
+    dirs 'libs'
+  }
+}
+
+dependencies {
+    compile (name:'devapplib-release', ext:'aar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.google.zxing:android-integration:2.3.0:supportv4'
+    compile 'com.google.android.gms:play-services-analytics:9.0.2'
+    compile 'com.mcxiaoke.volley:library:1.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile('com.segment.analytics.android:analytics:4.2.6@aar') {
+        transitive = true
+    }
+}

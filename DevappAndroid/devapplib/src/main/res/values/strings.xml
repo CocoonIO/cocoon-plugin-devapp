@@ -1,0 +1,305 @@
+<resources>
+
+    <string name="app_name">DevApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_multi">Multiple selection</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_sort_name">Sort by name</string>
+    <string name="action_sort_date">Sort by date</string>
+    <string name="action_sort_size">Sort by size</string>
+    <string name="action_select">Multiple select</string>
+    <string name="action_search">Search</string>
+    <string name="action_delete">Delete</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="usernameHint">email</string>
+    <string name="passwordEdit">password</string>
+    <string name="accountTitle">Cocoon Account</string>
+    <string name="createAccountTitle">Create Account</string>
+    <string name="createAccountButton">Sign Up</string>
+    <string name="loginAccountTitle">Login Account</string>
+    <string name="loginAccountButton">Log In</string>
+    <string name="confirm_credentials_msg">Please, log into your account</string>
+    <string name="account_created_msg">Account authentication succeeded</string>
+    <string name="no_account_msg">Sorry, you need to be logged in with a Cocoon Cloud account to launch your own apps</string>
+    <string name="no_valid_name">No valid name</string>
+    <string name="cancelLoginAccountButton">Cancel</string>
+    <string name="signup_account_link">No account? Sign Up!</string>
+    <string name="forgot_password_link">Forgot password?</string>
+    <string name="login_account_link">I already have an account, let me log in</string>
+    <string name="yourapp_title">Your App</string>
+    <string name="error_emty_value">%1$s cannot be empty</string>
+    <string name="error_passwords_match">Passwords don\'t match</string>
+    <string name="error_accept_terms">You need to accept terms to create an account</string>
+    <string name="field_first_name">First name</string>
+    <string name="field_last_name">Last name</string>
+    <string name="field_company">Company</string>
+    <string name="field_email">Email</string>
+    <string name="field_password">Password</string>
+    <string name="field_terms">&lt;a href="http://cloud.ludei.com/terms/">Terms&lt;/a></string>
+    <string name="field_accept_terms">Accept Terms</string>
+    <string name="menu_cocoonjs_demos">Cocoon Demos</string>
+    <string name="menu_showcase">Showcase</string>
+    <string name="menu_yourapp">Your App</string>
+    <string name="menu_yourcloud">Your Cloud</string>
+    <string name="menu_about">About</string>
+    <string name="app_font">fonts/Fontfabric - Nexa-Light.otf</string>
+    <string name="app_font_bold">fonts/Fontfabric - Nexa-Bold.otf</string>
+    <string name="text_login">Login</string>
+    <string name="text_signup">Signup</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_read_url">Select a URL to a zip or html file</string>
+    <string name="button_demos">DEMOS</string>
+    <string name="button_your_app">YOUR APP</string>
+    <string name="button_webview">WEBVIEW</string>
+    <string name="button_accelerated_webview">WEBVIEW+</string>
+    <string name="button_cocoonjs">CANVAS+</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_signup">SIGNUP</string>
+    <string name="menu_news">News</string>
+    <string name="menu_cat_tech">Cocoon Technology</string>
+    <string name="menu_cat_cloud">Cocoon Cloud</string>
+    <string name="menu_cat_other">Other</string>
+    <string name="text_copyright">Copyright Ludei 2014</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="loading">Loading...</string>
+    <string name="title_demos">DEMOS</string>
+    <string name="title_details">DEMO DETAILS</string>
+    <string name="title_url">URL</string>
+    <string name="title_documents">DOCUMENTS</string>
+    <string name="title_favorites">FAVORITES</string>
+    <string name="title_settings">SETTINGS</string>
+    <string name="title_menu">COCOON DEVAPP</string>
+    <string name="title_account_login">LOGIN</string>
+    <string name="title_account_signup">SIGN UP</string>
+    <string name="title_main">DEVAPP</string>
+    <string name="title_dialog">Choose environment</string>
+    <string name="download_error_message">An error ocurred while downloading %1$s</string>
+    <string name="unzip_error_message">An error ocurred while unzipping %1$s</string>
+    <string name="pref_debug_enable_key">debug_enable</string>
+    <string name="pref_debug_enable_title">Debug enabled</string>
+    <string name="pref_debug_enable_summary">Enable the debug view</string>
+    <string name="pref_remote_debug_enable_key">remote_debug_enable</string>
+    <string name="pref_remote_debug_enable_title">Remote debug enabled</string>
+    <string name="pref_remote_debug_enable_summary">Enable remote debug</string>
+    <string name="pref_debug_position_key">debug_position</string>
+    <string name="pref_debug_position_title">Debug position</string>
+    <string name="pref_debug_position_summary">The position of the debug view in the screen</string>
+    <string name="pref_orientation_mode_key">orientation_mode</string>
+    <string name="pref_orientation_mode_title">Orientation mode</string>
+    <string name="pref_orientation_mode_summary">Force the Cocoon orientation mode to the selected one</string>
+    <string name="pref_fps_type_key">fps_type</string>
+    <string name="pref_fps_type_title">FPS type</string>
+    <string name="pref_fps_type_summary">FPS type to be showed in the debug view</string>
+    <string name="pref_webgl_enabled_key">wgbgl_enabled</string>
+    <string name="pref_webgl_enabled_title">WebGL enabled</string>
+    <string name="pref_webgl_enabled_summary">Enable/disable WebGL</string>
+    <string name="pref_webgl_sreencanvas_key">webgl_screencanvas</string>
+    <string name="pref_webgl_sreencanvas_title">WebGL screencanvas</string>
+    <string name="pref_webgl_sreencanvas_summary">WebGL screencanvas mode</string>
+    <string name="pref_texture_reducer_key">texture_reducer</string>
+    <string name="pref_texture_reducer_title">Texture reducer</string>
+    <string name="pref_texture_reducer_summary">Texture reducer setting</string>
+    <string name="pref_supersampling_level_key">supersampling_level</string>
+    <string name="pref_supersampling_level_title">Supersampling level</string>
+    <string name="pref_supersampling_level_summary">Level of supersampling to be applied</string>
+    <string name="pref_scale_mode_key">scale_mode</string>
+    <string name="pref_scale_mode_title">Scale mode</string>
+    <string name="pref_scale_mode_summary">Scale mode to be applied to the canvas</string>
+    <string name="pref_path_render_quality_key">path_render_quality</string>
+    <string name="pref_path_render_quality_title">Path render quality</string>
+    <string name="pref_path_render_quality_summary">Quality of the path render</string>
+    <string name="pref_npot_allowed_key">npot_allowed</string>
+    <string name="pref_npot_allowed_title">Canvas 2D NPOT Textures</string>
+    <string name="pref_npot_allowed_summary">Allow Non power of two textures in the 2D canvas</string>
+    <string name="pref_logout_key">logout</string>
+    <string name="pref_logout_title">Logout</string>
+    <string name="pref_logout_summary">Logged out</string>
+    <string name="pref_last_url">last_url</string>
+    <string name="pref_current_tab">current_tab</string>
+    <string name="pref_last_document_path">last_document_path</string>
+    <string name="pref_last_document_position">last_document_position</string>
+    <string name="pref_last_document_order">last_document_order</string>
+    <string name="pref_last_history_position">last_history_position</string>
+    <string name="pref_last_history_order">last_history_order</string>
+    <string name="pref_last_favorite_position">last_favorite_position</string>
+    <string name="pref_last_favorite_order">last_favorite_order</string>
+
+    <string name="pref_account_cat_key">cocoon_account</string>
+    <string name="pref_account_cat_title">Cocoon Account</string>
+    <string name="pref_account_cat_summary">Cocoon Account</string>
+    <string name="pref_debug_cat_key">debug_cat</string>
+    <string name="pref_debug_cat_title">Debug</string>
+    <string name="pref_debug_cat_summary">Debug preferences</string>
+    <string name="pref_debug_cat_fragment">com.ludei.devapplib.android.fragments.prefs.DebugPreferencesFragment</string>
+    <string name="pref_render_cat_key">render_cat</string>
+    <string name="pref_canvasplus_cat_title">Canvas+</string>
+    <string name="pref_canvasplus_cat_summary">Canvas+ preferences</string>
+    
+    <string name="pref_render_cat_fragment">com.ludei.devapplib.android.fragments.prefs.RenderPreferencesFragment</string>
+    <string name="pref_general_cat_key">general_preferences</string>
+    <string name="pref_general_cat_title">General</string>
+    <string name="pref_general_cat_summary">General preferences</string>
+    <string name="pref_general_cat_fragment">com.ludei.devapplib.android.fragments.prefs.GeneralPreferencesFragment</string>
+    <string-array name="pref_orientation_mode_list">
+        <item >Landscape</item>
+        <item >Portrait</item>
+        <item >Both</item>
+    </string-array>
+    <string-array name="pref_orientation_mode_list_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+    </string-array>
+    <string-array name="pref_debug_position_list">
+        <item >Top left</item>
+        <item >Top right</item>
+        <item >Bottom left</item>
+        <item >Bottom right</item>
+    </string-array>
+    <string-array name="pref_debug_position_list_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+    <string-array name="pref_fps_type_list">
+        <item >Frame time</item>
+        <item >Frames per second</item>
+    </string-array>
+    <string-array name="pref_fps_type_list_values">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+    <string-array name="pref_webgl_screencanvas_list">
+        <item >Enabled by default</item>
+        <item >Disabled by default</item>
+        <item >Force enabled</item>
+        <item >Force disabled</item>
+    </string-array>
+    <string-array name="pref_webgl_screencanvas_list_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+    <string-array name="pref_texture_reducer_list">
+        <item >Disabled</item>
+        <item >Above 64</item>
+        <item >Above 128</item>
+        <item >Above 256</item>
+        <item >Above 512</item>
+        <item >Above 1024</item>
+        <item >Above 2048</item>
+    </string-array>
+    <string-array name="pref_texture_reducer_list_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+    </string-array>
+    <string-array name="pref_supersampling_level_list">
+        <item >Disabled</item>
+        <item >0.5x</item>
+        <item >1.5x</item>
+        <item >2.0x</item>
+        <item >2.5x</item>
+        <item >3.5x</item>
+        <item >4.0x</item>
+        <item >5.0x</item>
+        <item >6.0x</item>
+        <item >7.0x</item>
+        <item >8.0x</item>
+        <item >9.0x</item>
+        <item >10.0x</item>
+    </string-array>
+    <string-array name="pref_supersampling_level_list_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+        <item >9</item>
+        <item >10</item>
+        <item >11</item>
+        <item >12</item>
+    </string-array>
+    <string-array name="pref_scale_mode_list">
+        <item >No scale</item>
+        <item >Scale to fill</item>
+        <item >Scale aspect fill</item>
+        <item >Scale aspect fit</item>
+    </string-array>
+    <string-array name="pref_scale_mode_list_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+    <string-array name="pref_path_render_quality_list">
+        <item >Fastest</item>
+        <item >Fast</item>
+        <item >Default</item>
+        <item >Prefer quality</item>
+        <item >Best quality</item>
+    </string-array>
+    <string-array name="pref_path_render_quality_list_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+    </string-array>
+    <string name="copyright_text">Copyright Ludei %1$d</string>
+    <string name="select_zip_msg">Please select a zip file first</string>
+    <string name="error_msg">Error</string>
+    <string name="unzip_error_msg">Unzipping error</string>
+    <string name="unzip_canceled_msg">Unzipping canceled</string>
+    <string name="choose_zip_msg">Choose a zip file from the list below</string>
+    <string name="run_using_msg">Run using</string>
+    <string name="invalid_qrcode_msg">The read QRCode does not represent a valid URL</string>
+    <string name="no_index_error_msg">No index.html or index.htm found</string>
+    <string name="pref_debug_enable_default">true</string>
+    <string name="pref_remote_debug_enable_default">false</string>
+    <string name="pref_debug_position_default">0</string>
+    <string name="pref_orientation_mode_default">0</string>
+    <string name="pref_fps_type_default">1</string>
+    <string name="pref_webgl_enabled_default">true</string>
+    <string name="pref_webgl_sreencanvas_default">0</string>
+    <string name="pref_texture_reducer_default">0</string>
+    <string name="pref_supersampling_level_default">0</string>
+    <string name="pref_scale_mode_default">0</string>
+    <string name="pref_path_render_quality_default">0</string>
+    <string name="pref_npot_allowed_default">0</string>
+    <string name="account_confirmation_title">Confirmation</string>
+    <string name="account_confirmation_msg">The account has been successfully created. Check your inbox for a confirmation email.</string>
+    <string name="account_reset_title">Password Reset</string>
+    <string name="account_reset_msg">Reminder email successfully sent</string>
+    <string name="dialog_docs_title">File</string>
+    <string name="dialog_docs_delete_title">Delete file</string>
+    <string name="dialog_docs_delete_message">Are you sure you want to delete the following files? %1$s</string>
+    <string name="dialog_docs_delete_success">File %1$s deleted successfully</string>
+    <string name="dialog_docs_delete_error">Error deleting files: %1$s</string>
+    <string name="dialog_history_delete_title">Delete history entry</string>
+    <string name="dialog_history_delete_message">Are you sure you want to delete the following history entries? %1$s</string>
+    <string name="dialog_history_delete_success">Entry %1$s deleted successfully</string>
+    <string name="dialog_history_delete_error">Error deleting entry: %1$s</string>
+    <string name="dialog_favorite_delete_title">Delete favorite</string>
+    <string name="dialog_favorite_delete_message">Are you sure you want to delete the following favorites? %1$s</string>
+    <string name="dialog_favorite_delete_success">Favorite %1$s deleted successfully</string>
+    <string name="dialog_favorite_delete_error">Error deleting favorite: %1$s</string>
+    <string name="dialog_favorite_rename_title">Rename favorite</string>
+    <string name="demos_search_hint">Demo name</string>
+    <string name="files_search_hint">File name</string>
+    <string name="favorites_search_hint">Favorite name</string>
+    <string name="history_search_hint">Recently used</string>
+</resources>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compat="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/reset"
+        android:title="@string/action_reset"
+        android:icon="@mipmap/ic_thrash_w"
+        compat:showAsAction="always" />
+
+</menu>

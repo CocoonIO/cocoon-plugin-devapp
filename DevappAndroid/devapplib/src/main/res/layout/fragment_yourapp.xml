@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_layout"
+        android:focusableInTouchMode="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabs_layout"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:layout_marginRight="1dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_url"
+                android:src="@drawable/tab_url"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_weight="1" />
+
+            <com.ludei.devapplib.android.widgets.TextViewFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_url"
+                android:textColor="@drawable/tab_text"
+                android:textSize="@dimen/text_size_small"
+                app:customFont="@string/app_font_bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/text_url" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:layout_marginRight="1dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_docs"
+                android:src="@drawable/tab_docs"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_weight="1" />
+
+            <com.ludei.devapplib.android.widgets.TextViewFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_documents"
+                android:textColor="@drawable/tab_text"
+                android:textSize="@dimen/text_size_small"
+                app:customFont="@string/app_font_bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/text_docs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_favs"
+                android:src="@drawable/tab_fav"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_weight="1" />
+
+            <com.ludei.devapplib.android.widgets.TextViewFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_favorites"
+                android:textColor="@drawable/tab_text"
+                android:textSize="@dimen/text_size_small"
+                app:customFont="@string/app_font_bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/text_favs" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

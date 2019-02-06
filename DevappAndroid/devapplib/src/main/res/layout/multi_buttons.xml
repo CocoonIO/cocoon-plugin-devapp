@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+    android:background="@color/background">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/delete_item_button"
+        android:src="@drawable/ic_trash"
+        android:padding="10dp"
+        android:background="@color/background" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/add_fav_button"
+        android:background="@color/background"
+        android:src="@drawable/ic_add_fav"
+        android:padding="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/delete_fav_button"
+        android:background="@color/background"
+        android:src="@drawable/ic_remove_fav"
+        android:padding="10dp" />
+
+    <com.ludei.devapplib.android.widgets.ButtonFont
+        android:id="@+id/multi_cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/cancelLoginAccountButton"
+        android:textColor="@android:color/white"
+        app:customFont="@string/app_font_bold"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp" />
+
+</LinearLayout>

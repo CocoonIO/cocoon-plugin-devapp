@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        Ludei {
+            keyAlias 'ideateca'
+            keyPassword '1d34t3c4'
+            storeFile file('/Users/imanolmartin/Documents/Keys/android/ideateca.keystore')
+            storePassword '1d34t3c4'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId 'com.ludei.devapp.android'
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Ludei
+        }
+        debug {
+            debuggable true
+            jniDebuggable true
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(path: ':devapplib')
+    compile project(path: ':devapplib')
+    compile (name:'cordova-android-6.1.0-release', ext:'aar')
+}

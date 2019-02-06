@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#ff009cff</color>
+    <color name="blue_light">#ff6699ff</color>
+    <color name="blue_transparent">#7c009cff</color>
+    <color name="blue_light_transparent">#7c6699ff</color>
+    <color name="demo_detail_textpanel">#FF404040</color>
+    <color name="normal_blue">#2cd4d7</color>
+    <color name="highlighted_blue">#31e0e2</color>
+    <color name="background">#f7f7f7</color>
+    <color name="list_item_selected_color">#ff919191</color>
+    <color name="white_button_pressed">#ffeeeeee</color>
+
+</resources>

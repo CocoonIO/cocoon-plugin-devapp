@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/big_favs"
+            android:layout_margin="5dp" />
+
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.ludei.devapplib.android.widgets.TextViewFont"
+            android:id="@+id/view"
+            android:text="NO FAVORITES"
+            android:textSize="@dimen/text_size_large"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray" />
+
+        <view
+            class="com.ludei.devapplib.android.widgets.TextViewFont"
+            app:customFont="@string/app_font_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view2"
+            android:text="You have no favorites"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+	
+    <dimen name="indeterminate_progress_size">18dp</dimen>
+    <dimen name="page_margin_width">24dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="text_size_large">30sp</dimen>
+    <dimen name="text_size_medium">16dp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
+    <dimen name="text_size_tiny">12sp</dimen>
+
+    <dimen name="demos_list_image_height">125pt</dimen>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/main_back" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            tools:context="com.ludei.devapplib.android.DevAppActivity"
+            android:paddingLeft="10pt"
+            android:paddingRight="10pt"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/buttons_layout">
+
+                <com.ludei.devapplib.android.widgets.ButtonFont
+                    android:id="@+id/button_demos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_white"
+                    android:text="@string/button_demos"
+                    android:textSize="@dimen/text_size_medium"
+                    app:customFont="@string/app_font_bold"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/normal_blue"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <com.ludei.devapplib.android.widgets.ButtonFont
+                    android:id="@+id/button_your_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_white"
+                    android:text="@string/button_your_app"
+                    android:textColor="@color/normal_blue"
+                    android:textSize="@dimen/text_size_medium"
+                    app:customFont="@string/app_font_bold"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/login_layout"
+                    android:visibility="visible">
+                    <com.ludei.devapplib.android.widgets.ButtonFont
+                        android:id="@+id/button_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_white"
+                        android:text="@string/button_login"
+                        android:textColor="@color/normal_blue"
+                        android:textSize="@dimen/text_size_medium"
+                        app:customFont="@string/app_font_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginRight="1dp" />
+                    <com.ludei.devapplib.android.widgets.ButtonFont
+                        android:id="@+id/button_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_white"
+                        android:text="@string/button_signup"
+                        android:textColor="@color/normal_blue"
+                        android:textSize="@dimen/text_size_medium"
+                        app:customFont="@string/app_font_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="1dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"></LinearLayout>
+    </LinearLayout>
+
+    <com.ludei.devapplib.android.widgets.TextViewFont
+        android:id="@+id/version_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium"
+        app:customFont="@string/app_font_bold"
+        android:layout_gravity="bottom|right"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+</FrameLayout>

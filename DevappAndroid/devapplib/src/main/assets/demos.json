@@ -1,0 +1,85 @@
+[{
+  "name" : "WebGL Ludei Logo",
+  "description" : "Ludei's logo standing in the middle of Union Square in San Francisco with falling drops of water. Env map by Emil Persson: http://www.humus.name/index.php?page=Textures&ID=22",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-sample-webgl-ludei-logo/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-sample-webgl-ludei-logo.git",
+  "web" : false,
+  "orientation" : "Landscape",
+  "environment" : "All"
+},{
+  "name" : "WebGL 3D Horse",
+  "description" : "An animated 3D model of a horse running, taken from three.js demo list. Url: http://threejs.org/examples/webgl_morphtargets_horse.html",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-sample-webgl-horse/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-sample-webgl-horse.git",
+  "web" : false,
+  "orientation" : "Landscape",
+  "environment" : "All"
+},
+{
+  "name" : "WebGL PlayCanvas Doom3 Gangnam",
+  "description" : "Three monsters from Doom3 dancing to the sound of Gangnam Style. Note: this demo can be very GPU-intensive. Low-power devices usually have trouble with it. Taken from Playcanvas website: http://apps.playcanvas.com/will/doom3/gangnamstyle",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-sample-playcanvas-gangnam/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-sample-playcanvas-gangnam.git",
+  "web" : false,
+  "orientation" : "Landscape",
+  "environment" : "All"
+},
+{
+  "name" : "Cocoon Ads ",
+  "description" : "Cocoon Ads provide an easy to use Ads API that can be used with different Ad providers with built-in support for multiple banners and interstitials.",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-template-ads/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-template-ads.git",
+  "web" : false,
+  "orientation" : "Landscape",
+  "environment" : "All"
+},
+{
+  "name" : "Phaser",
+  "description" : "Phaser is an HTML5 game framework which aims to help developers make powerful, cross-browser HTML5 games really quickly and, unlike some others, has solely been built to work with the mobile browsers.",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-template-phaser/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-template-phaser.git",
+  "web" : true,
+  "orientation" : "Landscape",
+  "environment" : "All"
+},
+{
+  "name" : "Three.js ",
+  "description" : "Three.js is a library that makes WebGL - 3D in the browser - easy to use. While a simple cube in raw WebGL would turn out hundreds of lines of Javascript and shader code, a Three.js equivalent is only a fraction of that.",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-template-threejs/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-template-threejs.git",
+  "web" : true,
+  "orientation" : "Landscape",
+  "environment" : "All"
+},
+{
+  "name" : "AngularJS",
+  "description" : "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly.",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-template-angularjs/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-template-angularjs.git",
+  "orientation" : "Both",
+  "environment" : "Webview"
+}, {
+  "name" : "Polymer",
+  "description" : "Polymer is a web development framework based on web components, the new standard to create web applications.",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-template-polymer/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-template-polymer.git",
+  "web" : false,
+  "orientation" : "Both",
+  "environment" : "Webview"
+}, {
+  "name" : "Famo.us",
+  "description" : "Famo.us is an opinionated JS framework to create smooth UIs with Javascript.",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-template-famous-flex/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-template-famous-flex.git",
+  "web" : false,
+  "orientation" : "Portrait",
+  "environment" : "Webview"
+},{
+  "name" : "Ionic",
+  "description" : "Free and open source, Ionic offers a library of mobile-optimized HTML, CSS and JS components, gestures, and tools for building highly interactive apps. Built with Sass and optimised for AngularJS.",
+  "image_url" : "https://raw.githubusercontent.com/CocoonIO/cocoon-template-ionic/master/icon.png",
+  "github_url" : "https://github.com/CocoonIO/cocoon-template-ionic.git",
+  "web" : false,
+  "orientation" : "Both",
+  "environment" : "Webview"
+} ]

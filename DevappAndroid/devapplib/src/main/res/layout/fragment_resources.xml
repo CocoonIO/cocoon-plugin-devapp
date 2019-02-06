@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:layout_below="@+id/nav_buttons_layout">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_layout">
+
+            <ListView
+                android:id="@+id/items_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_progress"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/url_buttons_layout"
+        android:gravity="right"
+        android:layout_below="@+id/url_edit_layout"
+        android:visibility="gone">
+
+        <com.ludei.devapplib.android.widgets.ButtonFont
+            android:id="@+id/qrcode_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="QR"
+            android:textColor="@android:color/white"
+            app:customFont="@string/app_font_bold"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_above="@+id/url_edit"
+            android:layout_marginRight="2dp" />
+
+        <com.ludei.devapplib.android.widgets.ButtonFont
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            app:customFont="@string/app_font_bold"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_above="@+id/url_edit"
+            android:layout_marginRight="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_buttons_layout"
+        android:layout_below="@+id/url_edit_layout"
+        android:background="@color/background"
+        android:visibility="gone"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/up_button"
+            android:layout_below="@+id/url_buttons_layout"
+            android:src="@drawable/ic_back"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.ludei.devapplib.android.widgets.TextViewFont
+            android:id="@+id/current_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cwd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/list_text_selector"
+            app:customFont="@string/app_font_bold"
+            android:textSize="@dimen/text_size_medium"
+            android:maxLines="1"
+            android:ellipsize="middle"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/up_button"
+            android:layout_toEndOf="@+id/up_button"
+            android:layout_alignBaseline="@+id/up_button"
+            android:layout_gravity="center_vertical"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/url_edit_layout"
+        android:layout_alignParentTop="true"
+        android:background="@color/background"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/url_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:ems="10"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:inputType="textNoSuggestions|textUri"
+            android:hint="@string/text_read_url"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:autoText="true"
+            android:imeOptions="flagNoFullscreen"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/launch_buttons"
+        android:visibility="gone"
+        android:id="@+id/launch_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <include
+        layout="@layout/multi_buttons"
+        android:visibility="gone"
+        android:id="@+id/multi_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
